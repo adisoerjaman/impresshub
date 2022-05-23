@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/glider.min.css">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="h-screen flex flex-col font-barlow">
+    <header class="flex-none">
+        <h1 class="text-7xl uppercase tracking-widest text-center py-24">
+            Impress<span class="font-bold">hub</span>
+        </h1>
+    </header>
+    <main class="flex-1">
+        <div class="glider-contain h-full w-2/3">
+            <div class="glider h-full">
+                <a href="#" class="card rounded-md mx-6 bg-alumni h-full" id="alumni">
+                    <h2>The Alumni</h2>
+                </a>
+                <a href="#" class="card rounded-md mx-6 bg-blog h-full" id="blog">
+                    <h2>The Blog</h2>
+                </a>
+                <a href="#" class="card rounded-md mx-6 bg-festival h-full" id="festival">
+                    <h2>The Festival</h2>
+                </a>
+                <a href="#" class="card rounded-md mx-6 bg-game h-60 h-full" id="game">
+                    <h2>The Game</h2>
+                </a>
+                <a href="#" class="card rounded-md mx-6 bg-podcast h-60" id="podcast">
+                    <h2>The Podcast</h2>
+                </a>
+            </div>
+          
+            <!-- <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button> -->
+            <div role="tablist" class="dots"></div>
+        </div>
+    </main>
+    <footer class="flex-none h-52">
+        <button class="rounded-full bg-podcast">Save Changes</button>
+    </footer>
+    <script src="/glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'), {
+  slidesToShow: 1,
+  draggable: true,
+  rewind: true,
+  dots: '.dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
+    </script>
+
+</body>
+</html>
